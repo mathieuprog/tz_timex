@@ -29,7 +29,7 @@ erl_crash.dump
 *.ez
 
 # Ignore package tarball (built via "mix hex.build").
-tz-*.tar
+tz_timex-*.tar
 
 # macOS
 .DS_Store

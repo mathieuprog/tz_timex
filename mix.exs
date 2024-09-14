@@ -5,7 +5,7 @@ defmodule TzTimex.MixProject do
 
   def project do
     [
-      app: :tz,
+      app: :tz_timex,
       elixir: "~> 1.9",
       deps: deps(),
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -30,9 +30,8 @@ defmodule TzTimex.MixProject do
 
   defp deps do
     [
-      {:castore, "~> 0.1 or ~> 1.0", optional: true},
-      {:mint, "~> 1.6", optional: true},
-      {:ex_doc, "~> 0.34", only: :dev}
+      {:tz, "~> 0.28"},
+      {:timex, "~> 3.7", only: :test}
     ]
   end
 
