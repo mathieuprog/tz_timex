@@ -734,15 +734,6 @@ defmodule TzTimex do
     Date.days_in_month(date)
   end
 
-  def add() do
-  end
-
-  def subtract() do
-  end
-
-  def set() do
-  end
-
   defp time_unit(:hours) do
     Logger.warning("Use :hour, not :hours")
 
